@@ -14,6 +14,14 @@ exports.config = {
   
   // directConnect: true,
 
+  // see below link for geckoDriver
+  // https://github.com/angular/protractor/blob/master/lib/config.ts
+  // after following:
+  // npm install geckodriver --save-dev
+  // set geckDriver like below:
+  geckoDriver: "/home/guney/Desktop/tdd/tdd-chp7/node_modules/geckodriver/bin/geckodriver",
+
+
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
