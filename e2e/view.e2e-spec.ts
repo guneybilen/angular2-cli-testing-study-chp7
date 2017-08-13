@@ -1,5 +1,3 @@
-// import { TddChp7Page } from './app.po';
-
 import { browser, element, by } from 'protractor';
 
 describe('Given views should flip through navigation in', () => {
@@ -9,8 +7,8 @@ describe('Given views should flip through navigation in', () => {
   beforeEach( () => {
     browser.get('view1');
 
-    view1 = element(by.css('#view1'));
-    view2 = element(by.css('#view2'));
+    view1 = element(by.css('app-view1 #view1'));
+    view2 = element(by.css('app-view2 #view2'));
 
     view1Link = element(by.linkText('View1'));
     view2Link = element(by.linkText('View2'));
